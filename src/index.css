@@ -1,0 +1,47 @@
+:root {
+  --color-primary-very-dark: #1b1c1d;
+  --color-primary-dark: #1a263a;
+  --color-primary-medium: #2e4d81;
+  --color-primary-medium-light: #657ea9;
+  --color-primary-light: #8c98ae;
+  --color-primary-very-light: #cfd8e6;
+
+  --color-primary-saturated-dark: #041b44;
+  --color-primary-saturated-medium: #124397;
+  --color-primary-saturated-medium-light: #3772d9;
+  --color-primary-saturated-light: #7e9bcc;
+  --color-primary-saturated-very-light: #a1bcea;
+
+  --color-secondary-dark: #be9c15;
+  --color-secondary-medium: #e2c655;
+  --color-secondary-light: #eee0a9;
+  --color-secondary-very-light: #f7f3e4;
+
+  --color-primary-very-dark-0d8: rgba(27, 28, 29, 0.8);
+  --color-primary-very-dark-0d6: rgba(27, 28, 29, 0.6);
+  --color-primary-very-dark-0d5: rgba(27, 28, 29, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  /* color: var(--color-primary-dark); */
+
+  line-height: 1.5rem;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100dvh;
+  color: var(--color-secondary-very-light);
+  background-color: var(--color-primary-very-dark);
+}
+
+#root {
+  width: 100%;
+}

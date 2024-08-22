@@ -1,0 +1,120 @@
+#img-bg {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 30%;
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 10px 5px var(--color-primary-very-light),
+    inset 5px 5px 10px 5px rgba(94, 104, 121, 0.3),
+    0 0 40px -20px var(--color-secondary-light);
+  /* width: 225px; */
+  height: 225px;
+  aspect-ratio: 1 / 1;
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  /* background-color: transparent; */
+  border-radius: 50%;
+  box-shadow: -5px -5px 10px 5px var(--color-primary-very-light),
+    5px 5px 10px 5px rgba(94, 104, 121, 0.3);
+  /* background-image: url(./assets/Photo-Cartoon-prova2.png); */
+  transition: 2s;
+}
+
+.img-container img {
+  width: 65%;
+  transition: 2s;
+}
+
+.img-container:hover::after {
+  transform: rotate(360deg);
+}
+
+.img-container:hover img {
+  transform: scale(1.25);
+}
+
+.home-main-direction-screen {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.btn-container {
+  gap: 30px;
+}
+
+.radius-btn-code {
+  border-start-start-radius: 9999px;
+  border-start-end-radius: 2222px;
+  border-end-start-radius: 9999px;
+  border-end-end-radius: 2222px;
+}
+
+.radius-btn-art {
+  border-start-start-radius: 2222px;
+  border-start-end-radius: 9999px;
+  border-end-start-radius: 2222px;
+  border-end-end-radius: 9999px;
+}
+
+@media screen and (max-width: 1024px) {
+  #img-bg {
+    left: -5%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-main-direction-screen {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #img-bg {
+    top: 20%;
+    left: -10%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #img-bg {
+    top: 40%;
+    left: -15%;
+    width: 60%;
+    opacity: 0.15;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .radius-btn-code {
+    border-start-start-radius: 9999px;
+    border-start-end-radius: 9999px;
+    border-end-start-radius: 2222px;
+    border-end-end-radius: 2222px;
+  }
+
+  .radius-btn-art {
+    border-start-start-radius: 2222px;
+    border-start-end-radius: 2222px;
+    border-end-start-radius: 9999px;
+    border-end-end-radius: 9999px;
+  }
+}

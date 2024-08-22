@@ -1,0 +1,124 @@
+header {
+  height: calc(auto + 16px);
+  z-index: 100;
+}
+
+.ham-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  box-shadow: 0 0 4px var(--color-primary-very-dark);
+  border-radius: 5px;
+  border: none;
+  padding: 4px;
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.ham-menu:hover {
+  transform: scale(1.2);
+}
+
+.ham__row {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-primary-dark);
+}
+
+.list-item {
+  transition: 0.5s;
+}
+
+.list-item:hover {
+  animation: itemMove 2s ease-in-out infinite alternate;
+}
+
+@keyframes itemMove {
+  from {
+    transform: rotate(0) scale(1);
+  }
+  to {
+    transform: rotate(15deg) scale(1.2);
+  }
+}
+
+.list-item:hover img {
+  filter: drop-shadow(0 0 2px var(--color-secondary-very-light));
+}
+
+.item-active {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: inset 0 0 5px var(--color-primary-very-dark);
+  aspect-ratio: 1 / 1;
+  /* border: 4px solid var(--color-primary-very-dark);
+  background-color: var(--color-primary-very-light);
+  transform: translateY(50%); */
+}
+
+.main-w-screen {
+  width: 50%;
+}
+
+.sections-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 20px;
+  padding: 12px;
+  background-color: var(--color-primary-light);
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: -2px 2px 0px 0px var(--color-primary-light);
+  padding: 1.5rem;
+  width: 30%;
+}
+
+.sections-footer-direction-screen {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-w-screen {
+    width: 70%;
+  }
+
+  .section-footer {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-w-screen {
+    width: 95%;
+  }
+
+  .section-footer {
+    width: 100%;
+  }
+
+  .sections-footer-direction-screen {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-w-screen {
+    width: 95%;
+  }
+}

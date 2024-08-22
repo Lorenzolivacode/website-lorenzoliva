@@ -1,0 +1,61 @@
+/* WIDTH */
+/* - PERCENTAGE */
+.w-25p {
+  width: 25%;
+}
+
+.w-40p {
+  width: 40%;
+}
+
+.w-50p {
+  width: 50%;
+}
+
+.w-60p {
+  width: 60%;
+}
+
+.w-70p {
+  width: 70%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* - PIXELS */
+.w-16px {
+  width: 16px;
+}
+
+.w-30px {
+  width: 30px;
+}
+
+.w-40px {
+  width: 40px;
+}
+
+.w-45px {
+  width: 45px;
+}
+
+/* -MAX WIDTH */
+.max-w-60p {
+  max-width: 60%;
+}
+
+.max-w-70p {
+  max-width: 70%;
+}
+
+/* HEIGHT */
+.h-full {
+  height: 100%;
+}
+
+/* MIN HEIGHT DVH */
+.min-h-screen {
+  min-height: 100dvh;
+}

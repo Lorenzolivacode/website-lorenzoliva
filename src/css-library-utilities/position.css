@@ -1,0 +1,65 @@
+.absolute {
+  position: absolute;
+}
+
+.absolute-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.absolute-tr-10px {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.p-fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* BOTTOM */
+.bottom-0 {
+  bottom: 0;
+}
+
+/* TOP */
+.top-0 {
+  top: 0;
+}
+
+.top-70px {
+  top: 70px;
+}
+
+/* COORDINATE */
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Z-INDEX */
+.z-i-1 {
+  z-index: 1;
+}
