@@ -53,7 +53,7 @@ export function ModalHello({ isOpen, onClose }) {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="absolute-center flex-modal-hello-screen gap-20px main-w-screen radius-8px p-10px p-b-20px bg-secondary-very-light txt-c-primary-medium"
+            className="absolute-center shadow-10xy-black8 flex-modal-hello-screen gap-20px main-w-screen radius-8px p-10px p-b-20px bg-secondary-very-light txt-c-primary-medium"
           >
             <button
               onClick={onClose}

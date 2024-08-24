@@ -46,6 +46,10 @@
   padding-right: 20px;
 }
 
+.p-b-0 {
+  padding-bottom: 0;
+}
+
 .p-b-20px {
   padding-bottom: 20px;
 }

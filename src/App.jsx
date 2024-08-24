@@ -1,7 +1,8 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import { LanguageObjUsedContext } from "../src/Provider/LanguageContext";
+import { PageContext, SetPageContext } from "./Provider/PageContext";
 
 import { ModalHello } from "./Components/Modals/ModalHello/ModalHello";
 
@@ -12,6 +13,10 @@ import imgLO from "./assets/LO-img-3.2.png";
 
 function App() {
   const languageObjUsed = useContext(LanguageObjUsedContext);
+
+  const pageSelected = useContext(PageContext);
+  const setPageSelected = useContext(SetPageContext);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const classNameBaseBtn = "btn w-full p-12px  txt-center txt-decoration-none";
@@ -20,10 +25,16 @@ function App() {
     setIsModalOpen(false);
   };
 
+  useEffect(() => {
+    if (pageSelected !== "home") {
+      setPageSelected("home");
+    }
+  }, [pageSelected]);
+
   return (
     <div className="home-main-direction-screen w-full flex-between flex-center gap-80px">
       <ModalHello isOpen={isModalOpen} onClose={modalClose} />
-      <img src={imgLO} alt="" id="img-bg" />
+      <img src={imgLO} alt="" className="img-bg" />
       <div className="img-container" onClick={() => setIsModalOpen(true)}>
         <img src={phProfile} alt="" />
       </div>
@@ -40,10 +51,7 @@ function App() {
           >
             {languageObjUsed.nameCode}
           </NavLink>
-          <NavLink
-            to={"https://www.lorenzoliva.it/"}
-            className={`${classNameBaseBtn} radius-btn-art`}
-          >
+          <NavLink to={"/art"} className={`${classNameBaseBtn} radius-btn-art`}>
             {languageObjUsed.nameArt}
           </NavLink>
         </div>

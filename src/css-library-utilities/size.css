@@ -41,6 +41,14 @@
   width: 45px;
 }
 
+.w-60px {
+  width: 60px;
+}
+
+.w-80px {
+  width: 80px;
+}
+
 /* -MAX WIDTH */
 .max-w-60p {
   max-width: 60%;

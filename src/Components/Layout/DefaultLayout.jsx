@@ -6,9 +6,12 @@ import {
   SetLanguageContext,
   LanguageObjUsedContext,
 } from "./../../Provider/LanguageContext";
+import { PageContext } from "../../Provider/PageContext";
 
 import "./../../css-library-utilities/library-import.css";
 import "./defaultLayout.css";
+
+import { socialNetwork } from "./../../data/socialNetwork";
 
 import icoCode from "./../../assets/nav-icon/icon-code.png";
 import icoHome from "./../../assets/nav-icon/icon-home.png";
@@ -19,6 +22,8 @@ import ModalHamburger from "../ModalHamburger";
 export function DefaultLayout() {
   const setLanguage = useContext(SetLanguageContext);
   const languageObjUsed = useContext(LanguageObjUsedContext);
+  const pageSelected = useContext(PageContext);
+
   const navSections = [
     {
       name: languageObjUsed.nameCode,
@@ -39,6 +44,10 @@ export function DefaultLayout() {
       id: "s-A",
     },
   ];
+
+  const pageHomeDev = pageSelected === "home" || pageSelected === "dev";
+  const pageHomeArt = pageSelected === "home" || pageSelected === "art";
+  const pageArt = pageSelected === "art";
 
   const [modalOn, setModalOn] = useState(false);
 
@@ -143,14 +152,42 @@ export function DefaultLayout() {
                 {languageObjUsed.phoneLabel}
                 {languageObjUsed.phoneNumber}
               </li>
-              <li>
-                {languageObjUsed.mailArtLabel}
-                {languageObjUsed.mailArt}
-              </li>
-              <li>
-                {languageObjUsed.mailDevLabel}
-                {languageObjUsed.mailDev}
-              </li>
+              {pageHomeArt && (
+                <li>
+                  {languageObjUsed.mailArtLabel}
+                  {languageObjUsed.mailArt}
+                </li>
+              )}
+              {pageHomeDev && (
+                <li>
+                  {languageObjUsed.mailDevLabel}
+                  {languageObjUsed.mailDev}
+                </li>
+              )}
+              {pageArt && (
+                <li>
+                  <ul className="flex-center gap-20px p-10px p-b-0">
+                    {socialNetwork.map((socialNetwork) => {
+                      return (
+                        <li key={socialNetwork.id}>
+                          <a
+                            href={socialNetwork.url}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              src={socialNetwork.icon}
+                              alt={socialNetwork.label}
+                              title={socialNetwork.label}
+                              className="w-40px"
+                            />
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+              )}
             </ul>
           </div>
 

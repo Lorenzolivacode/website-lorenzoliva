@@ -107,7 +107,7 @@ export const portfolioData = [
       english: "Calculator that allows the use of the main operations.",
     },
     linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-06-27-Esercitazione`,
-    linkProject: "",
+    linkProject: "https://www.lorenzoliva.it/calculator/",
     created: "2024-06-27",
   },
   {
@@ -152,7 +152,7 @@ export const portfolioData = [
         "Application that shows a clock and a countdown. First approach with SetTimeout.",
     },
     linkGithub: "#",
-    linkProject: "",
+    linkProject: "https://www.lorenzoliva.it/timer-boom/",
     created: "2024-06-04",
   },
   {
@@ -182,7 +182,7 @@ export const portfolioData = [
         "Static landing page of a fake online ticket office for art exhibitions.",
     },
     linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-05-08-Esercitazione-sito`,
-    linkProject: "",
+    linkProject: "https://www.lorenzoliva.it/ticketartone/",
     created: "2024-05-27",
   },
 ];

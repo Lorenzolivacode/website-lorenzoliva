@@ -42,6 +42,10 @@ body {
   background-color: var(--color-primary-very-dark);
 }
 
+.art-bg {
+  background-color: var(--color-secondary-very-light);
+}
+
 #root {
   width: 100%;
 }

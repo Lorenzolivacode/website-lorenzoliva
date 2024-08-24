@@ -52,6 +52,14 @@
   box-shadow: -2px -2px 0px 0px var(--color-primary-saturated-light);
 }
 
+.shadow-20px-black {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.shadow-10xy-black8 {
+  box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.8);
+}
+
 /* RADIUS */
 .radius-sx-full {
   border-start-start-radius: 9999px;

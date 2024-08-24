@@ -1,8 +1,9 @@
-import { React, useContext } from "react";
+import { React, useContext, useEffect } from "react";
 import "./code-page.css";
 
 import { PortfolioList } from "./../../Components/PorfolioList/PortfolioList";
 import { LanguageObjUsedContext } from "../../Provider/LanguageContext";
+import { PageContext, SetPageContext } from "../../Provider/PageContext";
 
 import gitHubLIcon from "./../../assets/skills-img/GitHub-Light-Logo.png";
 import gitHubDIcon from "./../../assets/skills-img/GitHub-Dark-Logo.png";
@@ -18,6 +19,9 @@ import contactsIcon from "./../../assets/skills-img/Contacts-Dark-Logo.png";
 
 export function CodePage() {
   const languageObjUsed = useContext(LanguageObjUsedContext);
+
+  const pageSelected = useContext(PageContext);
+  const setPageSelected = useContext(SetPageContext);
 
   const skills = [
     { id: crypto.randomUUID(), label: "GitHub", icon: gitHubLIcon },
@@ -51,19 +55,20 @@ export function CodePage() {
     },
   ];
 
+  useEffect(() => {
+    if (pageSelected !== "dev") {
+      setPageSelected("dev");
+    }
+  }, [pageSelected]);
+
   return (
     <div className="code-main-direction-screen w-full">
       <section className="section-code-page flex-center flex-column gap-30px">
         <h2 className="f-bold f-size-2">{languageObjUsed.skillsLabel}</h2>
         <div className="skills-container flex-wrap flex-center">
           {skills.map((skill) => (
-            <div className="img-skill-container">
-              <img
-                key={skill.id}
-                src={skill.icon}
-                alt={skill.label}
-                title={skill.label}
-              />
+            <div key={skill.id} className="img-skill-container">
+              <img src={skill.icon} alt={skill.label} title={skill.label} />
               <p className="skill-label txt-center f-bold f-size-1d2 txt-c-primary-very-light">
                 {skill.label}
               </p>

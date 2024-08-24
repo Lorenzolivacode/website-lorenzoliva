@@ -85,7 +85,7 @@ export function PortfolioList() {
 
             <a
               href={project.linkGithub}
-              target={project.linkGithub.length >= 2 && "_blank"}
+              target={project.linkGithub.length >= 2 ? "_blank" : "_self"}
               rel="noopener noreferrer"
               title={`${languageObjUsed.visitProfile} ${
                 languageObjUsed.gitHubLabel
@@ -104,7 +104,7 @@ export function PortfolioList() {
 
             <a
               href={project.linkProject}
-              target={project.linkProject.length >= 2 && "_blank"}
+              target={project.linkProject.length >= 2 ? "_blank" : "_self"}
               rel="noopener noreferrer"
               title={`${languageObjUsed.followLink} ${
                 languageObjUsed.andLabel

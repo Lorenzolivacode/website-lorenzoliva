@@ -39,7 +39,7 @@ export const labelsIt = {
     "Da questa pagina web avete accesso ai miei due mondi: arte e sviluppo.",
   section: "section",
 
-  modalHelloLabel: "Ciao, sono Lorenzo,  piacere di conoscerti!",
+  modalHelloLabel: "Ciao, sono Lorenzo, piacere di conoscerti!",
 
   linkedinLabel: "LinkedIn",
   gitHubLabel: "GitHub",
@@ -57,6 +57,11 @@ export const labelsIt = {
   andLabel: "e",
   ofLabel: "del",
   followLink: "Segui il link",
+
+  maintenancePageLabel: "Questa pagina è momentaneamente in manutenzione",
+  checkOutSocialLabel: "dà un'occhiata ai miei social network",
+  //Da inserire english
+  imageLabel: "Immagine",
 };
 
 export const labelsEn = {
@@ -118,4 +123,7 @@ export const labelsEn = {
   andLabel: "and",
   ofLabel: "of",
   followLink: "Follow the link",
+
+  maintenancePageLabel: "This page is currently under maintenance",
+  checkOutSocialLabel: "check out my social networks",
 };
