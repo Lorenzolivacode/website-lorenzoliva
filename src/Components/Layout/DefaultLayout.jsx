@@ -173,7 +173,7 @@ export function DefaultLayout() {
                           <a
                             href={socialNetwork.url}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                           >
                             <img
                               src={socialNetwork.icon}

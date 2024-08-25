@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #img-bg {
+  .img-bg {
     left: -5%;
     width: 40%;
   }
@@ -84,7 +84,7 @@
     flex-direction: column;
   }
 
-  #img-bg {
+  .img-bg {
     top: 20%;
     left: -10%;
     width: 50%;
@@ -92,7 +92,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  #img-bg {
+  .img-bg {
     top: 40%;
     left: -15%;
     width: 60%;

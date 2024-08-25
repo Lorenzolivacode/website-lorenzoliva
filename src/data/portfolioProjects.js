@@ -92,7 +92,7 @@ export const portfolioData = [
       english:
         "To do list web app that allows you to add and remove to dos (temporarily).",
     },
-    linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-07-09-Esercitazione-Form-ListArtist`,
+    linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-07-08-Esercitazione-ToDo`,
     linkProject: "",
     created: "2024-07-08",
   },

@@ -30,7 +30,11 @@ export function ArtPage() {
         {socialNetwork.map((socialNetwork) => {
           return (
             <li key={socialNetwork.id}>
-              <a href={socialNetwork.url} target="_blank" rel="noreferrer">
+              <a
+                href={socialNetwork.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={socialNetwork.icon}
                   alt={socialNetwork.label}

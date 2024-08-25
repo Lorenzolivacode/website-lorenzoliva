@@ -10,6 +10,7 @@ import { PageProvider, PageContext } from "./Provider/PageContext.jsx";
 import { DefaultLayout } from "./Components/Layout/DefaultLayout.jsx";
 import { CodePage } from "./Pages/CodePage/CodePage.jsx";
 import { ArtPage } from "./Pages/ArtPage/ArtPage.jsx";
+import { PageViewer } from "./Pages/PageViewer/PageViewer.jsx";
 
 const router = createBrowserRouter(
   [
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
         { path: "/", element: <App /> },
         { path: "/dev", element: <CodePage /> },
         { path: "/art", element: <ArtPage /> },
+        { path: "/pdf", element: <PageViewer /> },
       ],
     },
   ]
