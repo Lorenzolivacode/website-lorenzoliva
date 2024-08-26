@@ -58,28 +58,3 @@
 .txt-c-secondary-light {
   color: var(--color-secondary-light);
 }
-
-/* FILTER */
-.blur-5px {
-  filter: blur(5px);
-}
-
-.backd-blur-5px {
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-/* OPACITY */
-.opacity-4 {
-  opacity: 0.4;
-}
-
-/* VISIBILITY */
-
-.vis-hidden {
-  visibility: hidden;
-}
-
-.vis-visible {
-  visibility: visible;
-}

@@ -60,8 +60,19 @@ export const labelsIt = {
 
   maintenancePageLabel: "Questa pagina è momentaneamente in manutenzione",
   checkOutSocialLabel: "dà un'occhiata ai miei social network",
-  //Da inserire english
   imageLabel: "Immagine",
+
+  sectionDev: "Dev",
+  sectionArt: "Art",
+  myCv: "CV Lorenzo Oliva",
+  myPortfolio: "Portfolio Lorenzo Oliva",
+  viewCvLabel: "Guarda il mio CV",
+  viewPortfolioLabel: "Guarda il mio portfolio",
+  docsLabel: "Documenti",
+  altTxtDocsLabel: "Apri e guarda i miei documenti",
+
+  copyrightLabel: "Copyright © 2024",
+  //Da inserire english
 };
 
 export const labelsEn = {
@@ -126,4 +137,17 @@ export const labelsEn = {
 
   maintenancePageLabel: "This page is currently under maintenance",
   checkOutSocialLabel: "check out my social networks",
+
+  imageLabel: "Image",
+
+  sectionDev: "Dev",
+  sectionArt: "Art",
+  myCv: "Lorenzo Oliva's CV",
+  myPortfolio: "Lorenzo Oliva's Portfolio",
+  viewCvLabel: "View my CV",
+  viewPortfolioLabel: "View my portfolio",
+  docsLabel: "Documents",
+  altTxtDocsLabel: "Open and view my documents",
+
+  copyrightLabel: "Copyright © 2024",
 };

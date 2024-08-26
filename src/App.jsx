@@ -10,6 +10,7 @@ import "./App.css";
 import "./css-library-utilities/library-import.css";
 import phProfile from "./assets/Photo-Cartoon-prova2.png";
 import imgLO from "./assets/LO-img-3.2.png";
+import imgBg from "./assets/img-bg.png";
 
 function App() {
   const languageObjUsed = useContext(LanguageObjUsedContext);
@@ -35,6 +36,7 @@ function App() {
     <div className="home-main-direction-screen w-full flex-between flex-center gap-80px">
       <ModalHello isOpen={isModalOpen} onClose={modalClose} />
       <img src={imgLO} alt="" className="img-bg" />
+      <img src={imgBg} alt="" className="img-bg" />
       <div className="img-container" onClick={() => setIsModalOpen(true)}>
         <img src={phProfile} alt="" />
       </div>

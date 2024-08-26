@@ -18,7 +18,8 @@ import icoHome from "./../../assets/nav-icon/icon-home.png";
 import icoArt from "./../../assets/nav-icon/icon-art.png";
 import itFlag from "./../../assets/nav-icon/flag-ico/IT-Flag.png";
 import enFlag from "./../../assets/nav-icon/flag-ico/GB-Flag.png";
-import ModalHamburger from "../ModalHamburger";
+import icoDocs from "./../../assets/nav-icon/icon-docs.png";
+import ModalDocs from "../Modals/ModalDocs/ModalDocs";
 export function DefaultLayout() {
   const setLanguage = useContext(SetLanguageContext);
   const languageObjUsed = useContext(LanguageObjUsedContext);
@@ -51,9 +52,9 @@ export function DefaultLayout() {
 
   const [modalOn, setModalOn] = useState(false);
 
-  const handleHamMenu = () => {
-    console.log("click");
-    console.log("modalOn", modalOn);
+  const handleDocsMenu = () => {
+    /* console.log("click"); */
+    /* console.log("modalOn", modalOn); */
     modalOn ? setModalOn(false) : setModalOn(true);
   };
 
@@ -80,18 +81,21 @@ export function DefaultLayout() {
   const handleLanguageChange = (e) => {
     const languageSelected = e.target.value;
     setLanguage(languageSelected);
-    console.log("changed: ", languageSelected);
+    /* console.log("changed: ", languageSelected); */
   };
 
   return (
     <>
       <header className="flex-around flex-cross-center p-12px p-fixed-top w-full bg-primary-very-light shadow-light-minus10">
-        {/* <button className="ham-menu" onClick={handleHamMenu}>
+        <button className="ham-menu relative" onClick={handleDocsMenu}>
+          <img src={icoDocs} alt="Documents" className="w-30px" />
+          {/* <div className="ham__row"></div>
           <div className="ham__row"></div>
-          <div className="ham__row"></div>
-          <div className="ham__row"></div>
-        </button> */}
-        {modalOn && <ModalHamburger />}
+          <div className="ham__row"></div> */}
+        </button>
+        {modalOn && (
+          <ModalDocs pageSelected={pageSelected} language={languageObjUsed} />
+        )}
         <ul className="section-list flex-center gap-30px">
           {navSections.map((section) => {
             return (
@@ -223,6 +227,7 @@ export function DefaultLayout() {
         <section className="txt-center f-lighter txt-c-primary-dark">
           <p>{languageObjUsed.footerLabel1}</p>
           <p>{languageObjUsed.footerLabel2}</p>
+          <p>{languageObjUsed.copyrightLabel}</p>
         </section>
       </footer>
     </>

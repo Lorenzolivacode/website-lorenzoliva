@@ -1,4 +1,23 @@
+/* HEIGHT */
+.h-full {
+  height: 100%;
+}
+
+/* -PIXELS */
+.h-30px {
+  height: 30px;
+}
+
+/* MIN HEIGHT DVH */
+.min-h-screen {
+  min-height: 100dvh;
+}
+
 /* WIDTH */
+.w-auto {
+  width: auto;
+}
+
 /* - PERCENTAGE */
 .w-25p {
   width: 25%;
@@ -56,14 +75,4 @@
 
 .max-w-70p {
   max-width: 70%;
-}
-
-/* HEIGHT */
-.h-full {
-  height: 100%;
-}
-
-/* MIN HEIGHT DVH */
-.min-h-screen {
-  min-height: 100dvh;
 }

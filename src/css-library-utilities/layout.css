@@ -1,0 +1,48 @@
+/* ASPECT-RATIO */
+.ratio-1 {
+  aspect-ratio: 1 / 1;
+}
+
+/* FILTER */
+.blur-5px {
+  filter: blur(5px);
+}
+
+.backd-blur-5px {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+/* OPACITY */
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+/* VISIBILITY */
+
+.vis-hidden {
+  visibility: hidden;
+}
+
+.vis-visible {
+  visibility: visible;
+}
+
+/* TRANSFORM */
+/* -TRANSLATE */
+.translate-y-100 {
+  transform: translateY(100%);
+}
+
+/* Z-INDEX */
+.z-i-1 {
+  z-index: 1;
+}

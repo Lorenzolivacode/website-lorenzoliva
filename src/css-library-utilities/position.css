@@ -14,6 +14,12 @@
   right: 10px;
 }
 
+.absolute-br-0 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .fixed {
   position: fixed;
 }
@@ -32,8 +38,16 @@
 }
 
 /* BOTTOM */
+.bottom-minus10px {
+  bottom: -10px;
+}
+
 .bottom-0 {
   bottom: 0;
+}
+
+.bottom-10px {
+  bottom: 10px;
 }
 
 /* TOP */
@@ -43,6 +57,19 @@
 
 .top-70px {
   top: 70px;
+}
+
+/* LEFT */
+.left-0 {
+  left: 0;
+}
+
+.left-10px {
+  left: 10px;
+}
+
+.left-20px {
+  left: 20px;
 }
 
 /* COORDINATE */
@@ -59,7 +86,7 @@
   transform: translate(-50%, -50%);
 }
 
-/* Z-INDEX */
-.z-i-1 {
-  z-index: 1;
+.start {
+  top: 0;
+  left: 0;
 }

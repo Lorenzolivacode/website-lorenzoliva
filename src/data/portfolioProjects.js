@@ -78,7 +78,7 @@ export const portfolioData = [
         "Web app that allows you to filter a list of favorite artists and add new ones or remove them (temporarily).",
     },
     linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-07-09-Esercitazione-Form-ListArtist`,
-    linkProject: "",
+    linkProject: "https://list-artist.vercel.app/",
     created: "2024-07-09",
   },
   {
@@ -93,7 +93,7 @@ export const portfolioData = [
         "To do list web app that allows you to add and remove to dos (temporarily).",
     },
     linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-07-08-Esercitazione-ToDo`,
-    linkProject: "",
+    linkProject: "https://todoh-list.vercel.app/",
     created: "2024-07-08",
   },
   {
