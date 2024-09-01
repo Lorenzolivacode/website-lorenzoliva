@@ -14,6 +14,7 @@ import reactIcon from "./../../assets/skills-img/React-Logo.png";
 import reactRouterIcon from "./../../assets/skills-img/React-Router-Logo.png";
 import twIcon from "./../../assets/skills-img/Tailwind-Logo.png";
 import tsIcon from "./../../assets/skills-img/Typescript-Logo.png";
+import nextIcon from "./../../assets/skills-img/Next-bl-Logo.png";
 import linkedinIcon from "./../../assets/skills-img/LinkedIn-Logo.png";
 import contactsIcon from "./../../assets/skills-img/Contacts-Dark-Logo.png";
 
@@ -32,6 +33,7 @@ export function CodePage() {
     { id: crypto.randomUUID(), label: "ReactRouter", icon: reactRouterIcon },
     { id: crypto.randomUUID(), label: "Tailwind", icon: twIcon },
     { id: crypto.randomUUID(), label: "TypeScript", icon: tsIcon },
+    { id: crypto.randomUUID(), label: "Next.js", icon: nextIcon },
   ];
 
   const links = [

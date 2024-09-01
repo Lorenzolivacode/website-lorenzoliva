@@ -19,6 +19,7 @@ import reactIcon from "./../../assets/skills-img/React-Logo.png";
 import reactRouterIcon from "./../../assets/skills-img/React-Router-Logo.png";
 import twIcon from "./../../assets/skills-img/Tailwind-Logo.png";
 import tsIcon from "./../../assets/skills-img/Typescript-Logo.png";
+import nextIcon from "./../../assets/skills-img/Next-bl-Logo.png";
 
 const getIcon = (requirement) => {
   switch (requirement) {
@@ -36,6 +37,8 @@ const getIcon = (requirement) => {
       return twIcon;
     case "typescript":
       return tsIcon;
+    case "next":
+      return nextIcon;
   }
 };
 

@@ -63,7 +63,7 @@ export const portfolioData = [
         "Fake shop application that allows you to select the number of products to purchase, see the total cost and browse product images.",
     },
     linkGithub: `${githubUrlBase}Edgemony-exercises/tree/main/2024-07-11-E-commerce`,
-    linkProject: "",
+    linkProject: "https://dohnutshop.vercel.app/",
     created: "2024-07-11",
   },
   {
